@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111; /* Dark Blue background */
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FF8C00; /* Dark Orange container background */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+h1 span.orange {
+    color: #FF8C00; /* Dark Orange */
+}
+
+h1 span.blue {
+    color: #0000FF; /* Dark Blue */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+th {
+    background-color: #222222;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+}
+
+tr:nth-child(odd) {
+    background-color: #444444;
+}
+
+td:last-child {
+    font-weight: bold;
+}
+
+.balance-positive {
+    color: #FF8C00; /* Dark Orange */
+}
+
+.balance-negative {
+    color: #0000FF; /* Dark Blue */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
