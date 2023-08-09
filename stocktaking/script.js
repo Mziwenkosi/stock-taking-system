@@ -1,3 +1,48 @@
+// Function to submit data to the server
+function submitData() {
+    const itemInput = document.getElementById('item');
+    const dispensedInput = document.getElementById('dispensed');
+    const consumed1Input = document.getElementById('consumed1');
+    const consumed2Input = document.getElementById('consumed2');
+    const consumed3Input = document.getElementById('consumed3');
+    const consumed4Input = document.getElementById('consumed4');
+
+    const data = {
+        item: itemInput.value,
+        dispensed: parseInt(dispensedInput.value) || 0,
+        consumed1: parseInt(consumed1Input.value) || 0,
+        consumed2: parseInt(consumed2Input.value) || 0,
+        consumed3: parseInt(consumed3Input.value) || 0,
+        consumed4: parseInt(consumed4Input.value) || 0,
+    };
+
+    // Send the data to the server
+    fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(result => {
+        console.log(result); // You can handle the response as needed
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+// Event listener for the "Submit" button
+const submitButton = document.getElementById('submit');
+submitButton.addEventListener('click', submitData);
+
+
+
+
+
+
+
 // Function to calculate and populate the table with data
 function calculateAndPopulateTable() {
     const itemInput = document.getElementById('item');

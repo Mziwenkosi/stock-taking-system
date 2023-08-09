@@ -69,3 +69,58 @@ td:last-child {
         font-size: 14px;
     }
 }
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    margin-right: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#calculate {
+    background-color: #0000FF; /* Dark Blue */
+    color: white;
+    border: 2px solid #FF8C00; /* Dark Orange */
+    
+}
+
+#calculate:hover {
+    background-color: white;
+    border-color: #0000FF; /* Dark Blue */
+    color: #0000FF;
+    transform: translate(0, -2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#clear {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+
+#clear:hover {
+    background-color: white;
+    color: red;
+    transform: translate(0, -2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#submit{
+    background-color: #0000FF; /* Dark Blue */
+    color: white;
+    border: 2px solid #FF8C00; /* Dark Orange */
+}
+
+
+#submit:hover {
+    background-color: white;
+    border-color: #0000FF; /* Dark Blue */
+    color: #0000FF;
+    transform: translate(0, -2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
